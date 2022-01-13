@@ -13,9 +13,9 @@ function receivesAFunction(cb) {
 }
 
 
-function returnsANamedFunction(namedFunction){
-    console.log(namedFunction());
-    return receivesAFunction();
+function returnsANamedFunction(){
+     return function namedFunction(){
+    }   
 }
 
 function returnsAnAnonymousFunction() {
